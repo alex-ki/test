@@ -1,0 +1,76 @@
+{
+  "src_folders": [
+    "tests"
+  ],
+  "output_folder": "reports",
+  "page_objects_path": "pages",
+  "globals_path": "globals.js",
+  "disable_colors": false,
+  "test_workers": false,
+  "webdriver": {
+    "start_process": false,
+    "server_path": "node_modules/chromedriver/bin/chromedriver",
+    "port": 9515
+  },
+  "test_settings": {
+    "default": {
+      "disable_colors": false,
+      "screenshots": {
+        "enabled": true,
+        "on_failure": true,
+        "on_error": true,
+        "path": "screenshots"
+      },
+      "request_timeout_options": {
+        "timeout": 30000,
+        "retry_attempts": 5
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "credentials_enable_service": false,
+        "profile.password_manager_enabled": false,
+        "chromeOptions": {
+          "prefs": {
+            "download.prompt_for_download": false,
+            "credentials_enable_service": false,
+            "password_manager_enabled": false,
+            "profile": {
+              "credentials_enable_service": false,
+              "password_manager_enabled": false
+            }
+          },
+          "args": [
+            "--user-agent=Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+            "--window-size=1280,800",
+            "--disable-save-password-bubble",
+            "--disable-extensions",
+            "--disable-extensions-file-access-check",
+            "--disable-extensions-http-throttling",
+            "--disable-infobars",
+            "--enable-automation",
+            "--disable-web-security",
+            "--safebrowsing-disable-download-protection",
+            "--ignore-certificate-errors",
+            "--test-type",
+            "--disable-save-password-bubble",
+            "--disable-extensions",
+            "--disable-extensions-file-access-check",
+            "--disable-extensions-http-throttling",
+            "--disable-infobars",
+            "--enable-automation",
+            "--disable-web-security",
+            "--safebrowsing-disable-download-protection",
+            "--ignore-certificate-errors",
+            "--test-type",
+            "--no-sandbox",
+            "--disable-gpu"
+          ]
+        }
+      },
+      "launch_url": "https://www.mql5.com/en/economic-calendar",
+      "globals": {}
+    }
+  }
+}

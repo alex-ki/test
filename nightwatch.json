@@ -64,7 +64,7 @@
             "--safebrowsing-disable-download-protection",
             "--ignore-certificate-errors",
             "--test-type",
-            "--no-sandbox",
+            "--no-sandbox", "--headless",
             "--disable-gpu"
           ]
         }

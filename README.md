@@ -18,4 +18,4 @@ Run 'nigtwatch'
 `junit-viewer --results=reports --save=report-ju.html`
 also report-ju.html generated
 
- 
+ test

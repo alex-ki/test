@@ -42,7 +42,6 @@
             }
           },
           "args": [
-            "--user-agent=Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
             "--window-size=1280,800",
             "--disable-save-password-bubble",
             "--disable-extensions",
@@ -64,7 +63,8 @@
             "--safebrowsing-disable-download-protection",
             "--ignore-certificate-errors",
             "--test-type",
-            "--no-sandbox", "--headless",
+            "--no-sandbox",
+
             "--disable-gpu"
           ]
         }
